@@ -1,0 +1,26 @@
+{
+  "name": "easybank-landing-page-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start-dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrzywN/easybank-landing-page-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrzywN/easybank-landing-page-master/issues"
+  },
+  "homepage": "https://github.com/GrzywN/easybank-landing-page-master#readme",
+  "dependencies": {
+    "parcel": "^2.4.1"
+  }
+}
