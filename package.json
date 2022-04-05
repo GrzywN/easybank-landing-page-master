@@ -22,5 +22,8 @@
   "homepage": "https://github.com/GrzywN/easybank-landing-page-master#readme",
   "dependencies": {
     "parcel": "^2.4.1"
+  },
+  "devDependencies": {
+    "sass": "^1.49.11"
   }
 }

@@ -1,10 +1,13 @@
 /* https://github.com/hankchizljaw/modern-css-reset/blob/master/src/reset.css */
 
 /* Box sizing rules */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove default margin */

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+
+.header {
+  &__nav-bar-link {
+    font-size: toRem(18);
+    letter-spacing: -0.14px;
+    font-weight: 400;
+    color: $color-dark-blue;
+    text-decoration: none;
+    @include media('>tablet') {
+      font-size: toRem(14);
+      letter-spacing: -0.11px;
+      color: $color-grayish-blue;
+      transition: color $transiton-default;
+      &:hover {
+        color: $color-dark-blue;
+      }
+    }
+  }
+  &__button {
+    font-size: toRem(14);
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: $color-white;
+  }
+}
