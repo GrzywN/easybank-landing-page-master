@@ -1,104 +1,35 @@
 @use '../abstracts/functions';
 @use '../abstracts/variables';
 
-*,
-*::before,
-*::after {
-  //   border: 1px dashed grey;
-}
-
 body {
-  background-color: black;
+  background-color: grey;
 }
 
 .header {
   background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 4em;
   position: relative;
+  display: flex;
+  justify-content: center;
   @include media('>tablet') {
     height: toRem(80);
     justify-content: space-around;
   }
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media('>tablet') {
+      max-width: 69.375rem;
+    }
+  }
   &__logo {
-    margin-left: 24px;
+    margin-left: toRem(24);
     width: toRem(139);
     height: toRem(20);
     @include media('>tablet') {
       margin: 0;
-    }
-  }
-  &__nav-bar {
-    background-color: $color-white;
-    display: grid;
-    place-items: center;
-    gap: toRem(24);
-    @include media('<tablet') {
-      padding-top: toRem(32);
-      padding-bottom: toRem(32);
-      position: absolute;
-      left: 50%;
-      bottom: -24px;
-      width: calc(100% - 48px);
-      transform: translateY(100%) translateX(-50%);
-    }
-    @include media('>tablet') {
-      display: flex;
-      gap: toRem(30);
-    }
-  }
-  &__nav-bar-item {
-    @include media('>tablet') {
-      display: grid;
-      place-items: center;
-      position: relative;
-      min-height: 80px;
-    }
-  }
-  &__nav-bar-link {
-    @include media('>tablet') {
-      &::after {
-        content: '';
-        background-image: $gradient;
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        transform: scaleX(0);
-        transform-origin: bottom center;
-        transition: all $transiton-default;
-      }
-      &:hover::after {
-        transform: scaleX(1);
-      }
-    }
-  }
-  &__button {
-    display: none;
-    @include media('>tablet') {
-      text-decoration: none;
-      background-image: $gradient;
-      border-radius: toRem(22);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: toRem(163);
-      height: toRem(44);
-      margin-bottom: toRem(7);
-      transition: filter $transiton-default;
-      &:hover {
-        filter: brightness(115%);
-      }
-    }
-  }
-  &__menu {
-    display: block;
-    @include media('>tablet') {
-      display: none;
     }
   }
 }

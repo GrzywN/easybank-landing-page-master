@@ -4,27 +4,29 @@ body {
   font-family: 'Public Sans', sans-serif;
 }
 
-.header {
-  &__nav-bar-link {
-    font-size: toRem(18);
-    letter-spacing: -0.14px;
-    font-weight: 400;
-    color: $color-dark-blue;
-    text-decoration: none;
-    @include media('>tablet') {
-      font-size: toRem(14);
-      letter-spacing: -0.11px;
-      color: $color-grayish-blue;
-      transition: color $transiton-default;
-      &:hover {
-        color: $color-dark-blue;
-      }
-    }
+.button {
+  font-size: toRem(14);
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: $color-white;
+}
+
+.nav__link {
+  font-size: toRem(18);
+  letter-spacing: -0.14px;
+  font-weight: 400;
+  color: $color-dark-blue;
+  text-decoration: none;
+  transition: color $transiton-default;
+  &:hover {
+    color: $color-lime-green;
   }
-  &__button {
+  @include media('>tablet') {
     font-size: toRem(14);
-    line-height: 28px;
-    letter-spacing: 0px;
-    color: $color-white;
+    letter-spacing: -0.11px;
+    color: $color-grayish-blue;
+    &:hover {
+      color: $color-dark-blue;
+    }
   }
 }

@@ -4,36 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Karol Binkowski" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="sass/main.scss" />
+    <script src="js/script.js" defer></script>
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
     <header class="header">
-      <img src="images/logo.svg" alt="Easybank" class="header__logo" />
-      <ul class="header__nav-bar" role="list">
-        <li class="header__nav-bar-item">
-          <a class="header__nav-bar-link" href="#">Home</a>
-        </li>
-        <li class="header__nav-bar-item">
-          <a class="header__nav-bar-link" href="#">About</a>
-        </li>
-        <li class="header__nav-bar-item">
-          <a class="header__nav-bar-link" href="#">Contact</a>
-        </li>
-        <li class="header__nav-bar-item">
-          <a class="header__nav-bar-link" href="#">Blog</a>
-        </li>
-        <li class="header__nav-bar-item">
-          <a class="header__nav-bar-link" href="#">Careers</a>
-        </li>
-      </ul>
-      <a class="header__button" href="#" role="button">Request Invite</a>
+      <div class="header__container">
+        <img src="images/logo.svg" alt="Easybank" class="header__logo" />
+        <nav class="nav" id="nav" data-expanded="false">
+          <ul class="nav__container" role="list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Careers</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="button button--gradient button--header" href="#" role="button">Request Invite</a>
+        <button id="main-menu" class="menu" aria-label="Main Menu" aria-expanded="false" aria-controls="nav">
+          <div class="menu__bar"></div>
+        </button>
+      </div>
     </header>
   </body>
 </html>

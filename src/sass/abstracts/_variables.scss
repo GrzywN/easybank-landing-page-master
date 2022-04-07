@@ -6,6 +6,6 @@ $color-light-grayish-blue: hsl(220, 16%, 96%);
 $color-very-light-gray: hsl(0, 0%, 98%);
 $color-white: hsl(0, 0%, 100%);
 
-$gradient: linear-gradient(135deg, $color-lime-green, $color-bright-cyan);
+$gradient: linear-gradient(to right, $color-lime-green, $color-bright-cyan);
 
-$transiton-default: 200ms ease;
+$transiton-default: 400ms ease;
